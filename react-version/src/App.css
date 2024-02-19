@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444;
   background-color: #f3f3f3;
   height: 100vh;
@@ -30,15 +30,17 @@ nav {
   padding: 0 2rem;
 }
 
+/* 
 .welcome {
   font-size: 1.9rem;
   font-weight: 500;
 }
-
 .logo {
   height: 5.25rem;
 }
+*/
 
+/*
 .login {
   display: flex;
 }
@@ -76,12 +78,15 @@ nav {
 }
 
 .login__btn:hover,
-.login__btn:focus,
+.login__btn:focus
+*/
+/*
 .btn--sort:hover,
 .btn--sort:focus {
   outline: none;
   color: #777;
 }
+*/
 
 /* MAIN */
 .app {
@@ -94,10 +99,10 @@ nav {
   gap: 2rem;
 
   /* NOTE This creates the fade in/out anumation */
-  opacity: 0;
+  opacity: 100;
   transition: all 1s;
 }
-
+/*
 .balance {
   grid-column: 1 / span 2;
   display: flex;
@@ -121,8 +126,10 @@ nav {
   font-size: 4.5rem;
   font-weight: 400;
 }
+*/
 
 /* MOVEMENTS */
+/*
 .movements {
   grid-row: 2 / span 3;
   background-color: #fff;
@@ -166,8 +173,10 @@ nav {
   font-size: 1.7rem;
   margin-left: auto;
 }
+*/
 
 /* SUMMARY */
+/*
 .summary {
   grid-row: 5 / 6;
   display: flex;
@@ -196,7 +205,8 @@ nav {
 .summary__value--out {
   color: #f5465d;
 }
-
+*/
+/*
 .btn--sort {
   margin-left: auto;
   border: none;
@@ -205,7 +215,7 @@ nav {
   font-weight: 500;
   cursor: pointer;
 }
-
+*/
 /* OPERATIONS */
 .operation {
   border-radius: 1rem;
