@@ -13,7 +13,19 @@ function App() {
   //Si no recogemos ningun dato en movimientos, me lo das como un array vacío
   const { movements = [], owner: user = "" } = account;
 
-  console.log(`El user que voy a mandar es ${user}`);
+  const handleLogin = (user, pin) => {
+    //aquí iría la llamada a servidor con usuario y pin
+    const currentAccount = account.find(
+      (account) => account.username === user && account.pin === pin
+    )
+    //actualizaríamos el estado de la app con la cuenta actual
+    if(currentAccount){
+      setAccount(currentAccount)
+      }
+    }   
+
+    
+  
 
   //TAREAS
   // 1. Crear el componente welcome
@@ -32,7 +44,7 @@ function App() {
     <>
       <nav>
         <Welcome user={user} />
-        <Login />
+        <Login onLogin={handleLogin} />
       </nav>
 
       {/*Si existe usuario y, como este dato es verdadero, saca todo lo que se define a continuación*/}
